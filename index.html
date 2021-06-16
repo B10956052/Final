@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        img {
+            vertical-align: bottom;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #aaa;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .banner img {
+            width: 100%;
+        }
+        
+        .title {
+            margin: 0 0px 20px;
+            background-color: #ccc;
+            padding: 30px 10px;
+        }
+        
+        .title h2 {
+            text-align: center;
+            font-size: 46px;
+        }
+        
+        .title p {
+            font-size: 22px;
+            text-align: center;
+        }
+        
+        .item {
+            margin: 0 10px 40px;
+        }
+        
+        .item .text h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .item .pic img {
+            width: 100%;
+        }
+        
+        .service {
+            padding: 60px 0;
+            background-color: #ffa;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .item-group {
+                display: flex;
+            }
+            .service .item {
+                display: flex;
+            }
+            .service .item .pic {
+                width: 100%;
+                margin: 0;
+            }
+            .service .item .text {
+                display: flex;
+                padding: 0 20px;
+                box-sizing: border-box;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        
+        #menu_control {
+            position: absolute;
+        }
+        
+        .header {
+            height: 50px;
+            background-color: #ccc;
+            position: relative;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        
+        .logo img {
+            vertical-align: middle;
+        }
+        
+        .menu_btn {
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        
+        .menu_btn span {
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        
+        .menu_btn::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: #aaa;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 8px 0px #aaa, 0px -8px 0px #aaa;
+        }
+        
+        nav {
+            width: 80%;
+            height: calc(100vh - 50px);
+            background-color: #282932;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+            transition: .5s;
+        }
+        
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #a6e22c;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a6e22c;
+        }
+        
+        #menu_control:checked~.header nav {
+            left: 0;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .menu_btn {
+                display: none;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                background-color: #282932;
+                align-items: center;
+            }
+            nav {
+                position: relative;
+                left: 0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top: 0;
+                background-color: transparent;
+            }
+            nav a {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="#">
+                <img src="https://picsum.photos/60/40?random=5">
+            </a>
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="" #="">首頁</a>
+            <a href="" #="">關於我們</a>
+            <a href="" #="">最新消息</a>
+            <a href="" #="">產品</a>
+            <a href="" #="">服務</a>
+            <a href="" #="">聯絡我們</a>
+        </nav>
+    </div>
+
+
+
+    <div class="banner">
+        <img src="https://picsum.photos/1400/500?random=1">
+    </div>
+
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2>關於我們</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque eius assumenda fuga hic magnam mollitia officiis ad inventore accusamus reprehenderit.</p>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=11">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>我家以往也要依然筆記本案例以便一眼遇到下了搜尋平均把我很大，到來笑話客服軟體那樣室內帶著學校，機場在他賓館球員協會，看。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=12">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>運動團體足球興奮行業營養考生說道，化學不可價格教授零售電腦老公可愛一生每個不代表，有點滑鼠對面因而畢竟語音別的一聲，情。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=13">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>道路歌手我覺得塑膠典型自我神秘為主除了畢業生依靠，公路求購我把顯示糖尿病今日消費者，典型準備文檔大多數取得有可能面議大。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="service">
+        <div class="wrap">
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=1">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>咖啡各種儘快還在感覺到心情趨勢，該公司出售然而一部走勢解壓密碼另一系列無數同樣提到，優勢一點清楚，多麼新鮮，數碼相機不。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2>關於我們</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis quibusdam ipsum sequi temporibus illo, maiores aperiam accusantium ipsam ad!</p>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=21">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>有所她的一口氣日常風情上述，情緒心情社會主義，三個要求長期工業帝國那麼一旦區域大會靈活還有，不行實際，區別官方，你怎不。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=22">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>再次你在頻道高效漂亮售價，你沒有結果產權幹什麼評分下面是我世紀英文上升驅動，戰士情況表示發佈日期，語文全國鼓勵工具，落。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=23">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>告訴我進一步自然另外鼓勵民國基隆外國這是，東方值得本網老人難以體育，某些閲讀天堂種類取得儘快相信運行還沒有微微標準，祝。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=24">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>著名專家紡織半年講話彼此狀態有什麼頭銜只需，以下東京這場方便，超市困難地位一流電器瀏覽，讀書有權優勢主機您是，道理一臉。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        &copy;copyright 2018 by csscoke
+    </div>
+</body>
+
+</html>
